@@ -1,0 +1,49 @@
+{% extends 'cuentas/main.html' %}
+
+{% block content %}
+    <br>
+    <div class="container">
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputNombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese su Nombre">
+            </div>
+            <div class="col-md-6">
+              <label for="inputApellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="inputApellido" placeholder="Ingrese su Apellido">
+            </div>
+            <div class="col-12">
+              <label for="inputDni" class="form-label">DNI</label>
+              <input type="text" class="form-control" id="inputDni" placeholder="Ingrese su dni">
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Ingrese su Correo Electronico">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCelular" class="form-label">Celular</label>
+              <input type="text" class="form-control" id="inputCelular" placeholder="Ingrese su Celular">
+            </div>
+            <div class="col-12">
+              <label for="inputDepartamento" class="form-label">Departamento</label>
+              <select id="inputDepartamento" class="form-select">
+                <option selected>Elegir...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="inputFechaInicio" class="form-label">Fecha de inicio del Contrato</label>
+              <input type="date" class="form-control" id="inputFechaInicio">
+            </div>
+            <div class="col-md-6">
+              <label for="inputFechaFin" class="form-label">Fecha de fin del Contrato</label>
+              <input type="date" class="form-control" id="inputFechaFin">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Cargar</button>
+            </div>
+          </form>
+    </div>
+    <br>
+
+{% endblock %}

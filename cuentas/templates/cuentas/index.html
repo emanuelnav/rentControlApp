@@ -1,0 +1,35 @@
+{% extends 'cuentas/main.html' %}
+
+{% block content %}
+
+    <br>
+
+    <div class="row">
+        <div class="col-md">
+            <div class="card card-body">
+                <h5>Departamentos</h5>
+            </div>
+            <div class="card card-body">
+                <table class="table">
+                    <tr>
+                        <th></th>
+                        <th>Departamento</th>
+                        <th>Inquilino</th>
+                        <th>Proximo Vencimiento</th>
+                    </tr>
+                    {% for i in inquilino %}
+                        <tr>
+                            <td><a class= "btn btn-sm btn-primary" href="{% url 'departamento' i.departamento.id %}">Ver</a></td>
+                            <td>{{i.departamento}}</td>
+                            <td>{{i}}</td>
+                            <td>{{i.departamento.proxVenc}}</td>
+                        </tr>
+                    {% endfor %}
+                    
+                </table>
+            </div>
+        </div>
+        
+    </div>
+
+{% endblock %}

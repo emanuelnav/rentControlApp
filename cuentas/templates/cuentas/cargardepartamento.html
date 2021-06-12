@@ -1,0 +1,31 @@
+{% extends 'cuentas/main.html' %}
+
+{% block content %}
+
+<br>
+<div class="container">
+    <form class="row g-3">
+        <div class="col-md-12">
+          <label for="inputNombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese nombre departamento">
+        </div>
+        <div class="col-md-8">
+          <label for="inputDireccion" class="form-label">Direccion</label>
+          <input type="text" class="form-control" id="inputDireccion" placeholder="Ingrese la Direccion">
+        </div>
+        <div class="col-2">
+          <label for="inputPiso" class="form-label">Piso</label>
+          <input type="text" class="form-control" id="inputPiso" placeholder="Ingrese el piso">
+        </div>
+        <div class="col-md-2">
+          <label for="inputNumero" class="form-label">Numero</label>
+          <input type="text" class="form-control" id="inputNumero" placeholder="Ingrese el numero">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Cargar</button>
+        </div>
+      </form>
+</div>
+<br>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'cuentas/main.html' %}
+
+{% block content %}
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <p>Departamento: {{departamento.direccion}}</p>
+            <p>Inquilino: {{inq}}</p>
+            <h3>Ultimos pagos</h3>
+        </div>
+        <div class="row">
+            <table class="table">
+                <tr>
+                    <th>#</th>
+                    <th>Fecha</th>
+                    <th>Monto</th>
+                    <th>Vencimiento</th>
+                </tr>
+                {% for p in pago %}
+                    <tr>
+                        <td>{{p.numero}}</td>
+                        <td>{{p.fecha}}</td>
+                        <td>{{p.monto}}</td>
+                        <td>{{p.vencimiento}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+    </div>
+
+{% endblock %}
