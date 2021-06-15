@@ -14,6 +14,10 @@ def departamento(request, pk):
     context = {'departamento': departamento, 'inq': inq, 'pago': pago}
     return render(request, 'cuentas/departamento.html', context)
 
+def inquilino(request):
+    inquilino = Inquilino.objects.all()
+    return render(request, 'cuentas/inquilinos.html', {'inquilino': inquilino })
+
 def cargarInquilino(request):
     departamento= Departamento.objects.all()
     return render(request, 'cuentas/cargarinquilino.html', {'departamento': departamento})
