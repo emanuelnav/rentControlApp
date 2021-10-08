@@ -5,21 +5,21 @@
     <br>
     <div class="container">
         <div class="row">
-            <p>Departamento: {{departamento.direccion}}</p>
-            <p>Inquilino: {{inq}}</p>
-            <h3>Ultimos pagos</h3>
+            <h4>Departamento: {{departamento.direccion}}</h4>
+            <h4>Inquilino: {{inq}}</h4>
+            <h2 style="margin-top: 20px;">Ultimos pagos</h2>
         </div>
         <div class="row">
             <table class="table">
                 <tr>
-                    <th>#</th>
+                    <!-- <th>#</th> -->
                     <th>Fecha</th>
                     <th>Monto</th>
                     <th>Vencimiento</th>
                 </tr>
                 {% for p in pago %}
                     <tr>
-                        <td>{{p.numero}}</td>
+                        <!-- <td>{{p.numero}}</td> -->
                         <td>{{p.fecha}}</td>
                         <td>{{p.monto}}</td>
                         <td>{{p.vencimiento}}</td>
