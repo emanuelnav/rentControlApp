@@ -24,3 +24,7 @@ def cargarInquilino(request):
 
 def cargarDepartamento(request):
     return render(request, 'cuentas/cargardepartamento.html')
+
+def allPosts(request):
+    posts = Post.objects.all()
+    return {'posts': posts}
