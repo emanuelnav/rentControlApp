@@ -1,0 +1,17 @@
+*.pyc
+.DS_Store
+/cuentas/__pycache__/*.pyc
+/migrations/__pycache__/*.pyc
+/rentApp/__pycache__/*.pyc
+__pycache__
+db.splite3
+
+# venv
+/bin/
+/lib/
+/share
+/pyvenv.cfg
+/pip-selfcheck.json
+
+# vscode
+.vscode

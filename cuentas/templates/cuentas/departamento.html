@@ -12,17 +12,17 @@
         <div class="row">
             <table class="table">
                 <tr>
-                    <!-- <th>#</th> -->
                     <th>Fecha</th>
                     <th>Monto</th>
-                    <th>Vencimiento</th>
+                    <th>Concepto</th>
+                    <th>Mes</th>
                 </tr>
                 {% for p in pago %}
                     <tr>
-                        <!-- <td>{{p.numero}}</td> -->
                         <td>{{p.fecha}}</td>
                         <td>{{p.monto}}</td>
-                        <td>{{p.vencimiento}}</td>
+                        <td>{{p.concepto}}</td>
+                        <td>{{p.pago_mes}}</td>
                     </tr>
                 {% endfor %}
             </table>

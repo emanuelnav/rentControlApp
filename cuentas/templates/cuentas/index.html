@@ -13,14 +13,14 @@
                         <th></th>
                         <th>Departamento</th>
                         <th>Inquilino</th>
-                        <th>Proximo Vencimiento</th>
+                        <th>Al Dia</th>
                     </tr>
                     {% for i in inquilino %}
                         <tr>
                             <td><a class= "btn btn-sm btn-primary" href="{% url 'departamento' i.departamento.id %}">Ver</a></td>
                             <td>{{i.departamento}}</td>
                             <td>{{i}}</td>
-                            <td>{{i.departamento.proxVenc}}</td>
+                            <td><i class="fas fa-check-square"></i></td>
                         </tr>
                     {% endfor %}
                 </table>

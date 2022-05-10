@@ -6,5 +6,6 @@ urlpatterns = [
     path('departamento/<str:pk>/',views.departamento, name="departamento"),
     path('cargarinquilino',views.cargarInquilino, name="cargarInquilino"),
     path('cargardepartamento',views.cargarDepartamento, name="cargarDepartamento"),
+    path('cargarpago',views.cargarPago, name="cargarPago"),
     path('inquilinos',views.inquilino, name="inquilinos"),
 ]

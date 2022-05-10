@@ -1,0 +1,42 @@
+{% extends 'cuentas/main.html' %}
+
+{% block content %}
+
+<br>
+<div class="container">
+    <form class="row g-3">
+        <div class="col-12">
+          <label for="inputInquilino" class="form-label">Inquilino</label>
+          <select id="inputInquilino" class="form-select">
+            <option selected>Elegir...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-8">
+          <label for="inputFecha" class="form-label">Fecha</label>
+          <input type="date" class="form-control" id="inputFecha">
+        </div>
+        <div class="col-2">
+          <label for="inputMonto" class="form-label">Monto</label>
+          <input type="text" class="form-control" id="inputMonto" placeholder="Ingrese el monto">
+        </div>
+        <div class="col-md-2">
+          <label for="inputPagoMes" class="form-label">PagoMes</label>
+          <input type="text" class="form-control" id="inputPagoMes" placeholder="Ingrese a que Mes corresponde el pago">
+        </div>
+        <div class="col-md-2">
+          <label for="inputConcepto" class="form-label">Concepto</label>
+          <input type="text" class="form-control" id="inputConcepto" placeholder="Ingrese el concepto">
+        </div>
+        <div class="col-md-2">
+          <label for="inputNota" class="form-label">Nota</label>
+          <input type="text" class="form-control" id="inputNota" placeholder="">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Cargar</button>
+        </div>
+      </form>
+</div>
+<br>
+
+{% endblock %}
