@@ -1,10 +1,9 @@
 *.pyc
 .DS_Store
-/cuentas/__pycache__/*.pyc
-/migrations/__pycache__/*.pyc
-/rentApp/__pycache__/*.pyc
 __pycache__
-db.splite3
+migrations/__pycache__
+rentApp/__pycache__
+db.sqlite3
 
 # venv
 /bin/
